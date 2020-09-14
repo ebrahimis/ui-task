@@ -9,7 +9,6 @@
 </head>
 <body>
 	
-
 	<header class="header-section">
 		<div class="container">
 			<div class="nav-menue">
@@ -30,23 +29,53 @@
 					</nav>
 				</div>
 			</div>
-		
-			<div class="main-text">
-				<span class="big-text">
-					More than just <br> shorter links
-				</span class="big-text">
-		
-				<p class="gray-text">
-					Build your brand's recognition and get detailed <br>
-					insights on how your links are performing.
-				</p>
-		
-				<div>
-					<button class="btn-style">
-						Get Started
-					</button>
+
+			<nav class="mobile-nav-menue">
+				<div class="navigation">
+					<div class="shorty">Shorty</div>
+					<span class="menu-icon">
+						<img src="/assets//images/menu-icon.png" alt="">
+					</span>
+					<div class="mobile-nav mobile">
+						<span class="column mobile-menu">
+							<div class="nav-items column">
+								<a href="#">Features</a>
+								<a href="#">Pricing</a>
+								<a href="#">Recources</a>
+							</div>
+							<div class="action-button column">
+								<a href="#">Login</a>
+								<button class="sign-up">
+									Sign Up
+								</button>
+							</div>
+						</span>
+					</div>
 				</div>
+			</nav>
+
 		
+			<div class="main-header-div">
+				<div class="main-text">
+					<span class="big-text">
+						More than just <br> shorter links
+					</span class="big-text">
+			
+					<p class="gray-text">
+						Build your brand's recognition and get detailed <br>
+						insights on how your links are performing.
+					</p>
+			
+					<div>
+						<button class="btn-style">
+							Get Started
+						</button>
+					</div>
+			
+				</div>
+				<div class="image">
+
+				</div>
 			</div>
 		</div>
 	</header>
@@ -56,13 +85,15 @@
 			<div class="input-box">
 				<div class="input-url">
 					<div class="inner-input">
-						<input type="text" id="origin-url" name="url" placeholder="Shorten a link here...">
-						<button onclick="shrten_url()" class="btn-shorten">
-							Shorten It!
-						</button>
-					</div>
-					<div id="error-text" class="error-text">
-						<p>Please add a link</p>
+						<div class="url-field">
+							<input type="text" id="origin-url" name="url" placeholder="Shorten a link here...">
+							<p id="error-text" class="error-text">Please add a link</p>
+						</div>
+						<div class="shorten-btn-div">
+							<button onclick="shrten_url()" id="btn-shorten" class="btn-shorten">
+								Shorten It!
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -143,7 +174,7 @@
 			</div>
 
 			<div class="footer-stuff footer-nav">
-				<ul>
+				<ul class="footer-nav-menue">
 					<li class="header">
 						Features
 					</li>
@@ -158,7 +189,7 @@
 					</li>
 				</ul>
 
-				<ul>
+				<ul class="footer-nav-menue">
 					<li class="header">
 						Resources
 					</li>
@@ -173,7 +204,7 @@
 					</li>
 				</ul>
 
-				<ul>
+				<ul class="footer-nav-menue">
 					<li class="header">
 						Company
 					</li>

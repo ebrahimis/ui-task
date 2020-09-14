@@ -1,3 +1,7 @@
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener('click', toggle);
+
 function copied(element) {
     
     span_link = element.parentNode.childNodes[0];
@@ -23,7 +27,9 @@ async function shrten_url() {
     if (url == "") {
         url_element.style.border = "2px solid magenta";
         url_element.classList.add("error")
-        document.getElementById("error-text").style.display = "flex";
+        document.getElementById("error-text").style.display = "contents";
+        document.getElementById("error-text").style.position = "absolute";
+        document.getElementById("btn-shorten").style.marginBottom = "15px"
         return;
     }
 
@@ -82,4 +88,9 @@ function create_shortened_result(origin_link, shortened_link) {
     /* finally adding div to the dom */
     shortened_urls_div.appendChild(parent_div);
 
+}
+
+function toggle() {
+    const mobileNav = document.querySelector('.mobile-nav');
+    mobileNav.classList.toggle('mobile');
 }
